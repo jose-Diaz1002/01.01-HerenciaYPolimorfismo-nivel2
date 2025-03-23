@@ -1,9 +1,10 @@
 package Ejercicio1Nivel2;
-public class Smartphone extends Telefono implements Reloj,Camara{
-    public String alarma() {
-        return "Está sonando la alarma";
+public class Smartphone extends Phone implements Clock, Camera {
+    public String alarm() {
+        return "The alarm is ringing";
     }
-    public String fotografiar() {
-        return "Se está haciendo una foto";
+
+    public String takePhoto() {
+        return "A photo is being taken";
     }
 }
