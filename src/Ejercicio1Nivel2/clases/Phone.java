@@ -1,4 +1,5 @@
 package Ejercicio1Nivel2.clases;
+
 public class Phone {
     private String brand;
     private String model;
@@ -31,7 +32,7 @@ public class Phone {
 
     @Override
     public String toString() {
-        return  "brand='" + brand + '\'' +
+        return "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 '}';
     }

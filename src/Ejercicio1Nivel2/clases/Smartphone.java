@@ -5,20 +5,22 @@ import Ejercicio1Nivel2.interficies.Clock;
 
 public class Smartphone extends Phone implements Clock, Camera {
 
-    public Smartphone(String brand, String model ) {
+    public Smartphone(String brand, String model) {
         super(brand, model);
     }
 
+    @Override
     public String alarm() {
         return "The alarm is ringing";
     }
 
+    @Override
     public String takePhoto() {
         return "A photo is being taken";
     }
 
     @Override
     public String toString() {
-        return "\nSmartphone" +" de marca: "+ getBrand() + ", modelo: " + getModel();
+        return "\nSmartphone" + " de marca: " + getBrand() + ", modelo: " + getModel();
     }
 }
