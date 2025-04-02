@@ -1,37 +1,57 @@
 01.01-Herencia y Polimorfismo Nivel 2
 
-statement:
-Create a class called "Phone" with the attributes brand and model, and a method called call(). 
-This method should receive a String with a phone number. The method should display a message on 
-the console indicating that it is calling the number received as a parameter.
-Create an interface called "Camera" with the method takePhoto(), and another interface 
-called "Clock" with the method alarm().
-Create a class called "Smartphone" that is a subclass of "Phone" and also implements 
-the "Camera" and "Clock" interfaces.
-The takePhoto() method should display: "A photo is being taken" on the console, 
-and the alarm() method should display: "The alarm is ringing".
-From the main() method of the application, create a Smartphone object and call the methods 
-mentioned above.
-Description:
-This project involves creating and managing a Phone and Smartphone class to demonstrate method calls 
-and object instantiation in Java
+# Java Exercise - Smartphone Features
 
-Technologies Used:
-Java
-IntelliJ IDEA
+## 📄 Descripció
 
-Requirements:
-Java Development Kit (JDK) 11 or later
-IntelliJ IDEA or any Java-compatible IDE
+Aquest exercici té com a objectiu demostrar l’ús de **classes, herència i interfícies en Java**. 
+Es crearà una jerarquia de classes i interfícies per representar un **Smartphone** amb funcionalitats 
+de telèfon, càmera i rellotge.
 
-Installation: Clone this repository: git clone Navigate to the project directory Open the 
-project in IntelliJ 
-IDEA or another Java IDE. Compile and run the program.
+---
 
-Deployment: This is a simple Java program intended for local execution. If needed, it can be 
-packaged as a .jar file for easy distribution.
+## 📌 Exercici 1
 
-Contributions: Contributions are welcome! Follow these steps to contribute: 
-Fork the repository. Create a new branch: git checkout -b feature/NewFeature 
-Make your changes and commit them: git commit -m 'Added New Feature' Push your 
-changes to your branch: git push origin feature/NewFeature Create a Pull Request
+### **Especificacions:**
+1. **Classe `Telèfon`**  
+   - Atributs: `marca` i `model`
+   - Mètode `trucar(String numero)`: Mostra un missatge indicant que s’està trucant al número rebut.
+
+2. **Interfície `Camera`**  
+   - Mètode `fotografiar()`: Mostra per consola `"S’està fent una foto"`.
+
+3. **Interfície `Rellotge`**  
+   - Mètode `alarma()`: Mostra per consola `"Està sonant l’alarma"`.
+
+4. **Classe `Smartphone`** *(subclasse de `Telèfon`, implementa `Camera` i `Rellotge`)*
+   - Sobreescriu `trucar()`
+   - Implementa `fotografiar()` i `alarma()`
+
+5. **Main Class**  
+   - Crear un objecte `Smartphone`
+   - Cridar als mètodes `trucar()`, `fotografiar()` i `alarma()`
+
+---
+
+## 💻 Tecnologies Utilitzades
+
+- **Java 8+**
+- **Programació Orientada a Objectes (OOP)**
+- **Interfícies i Herència**
+
+---
+
+## 📋 Requisits
+
+Assegura’t de tenir instal·lat:
+
+- **JDK 8 o superior**  
+- **Un IDE compatible (IntelliJ IDEA, Eclipse, VS Code, NetBeans, etc.)**  
+
+---
+
+## 🛠️ Instal·lació
+
+1. **Clona el repositori**  
+   ```bash
+   git clone https://github.com/your-repo/java-smartphone.git
